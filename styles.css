@@ -1,0 +1,488 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* header and footer content */
+header>h1 {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: black 0px 0px 3px,
+        green 4px 4px 4px,
+        blue 0px 0px 55px;
+}
+
+header,
+footer {
+    width: 100%;
+}
+
+/* body content, background set */
+body {
+    background: url(images/wood_background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: brown;
+    color: white;
+
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 100px;
+}
+
+/* navigation style */
+nav.horizontal li {
+    font-size: 1.4em;
+    line-height: 2em;
+    text-transform: uppercase;
+    float: left;
+}
+
+nav.horizontal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav.horizontal ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Main content w/ Flex Style */
+.flex-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-image>p {
+    flex: 1 1 100px;
+    margin: 10px 20px;
+}
+
+.main-text {
+    background-color: rgb(197, 197, 197);
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    /* Required border */
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+section#main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 1em;
+}
+
+section#main>h2 {
+    width: 100%;
+    margin-left: 30px;
+    padding: 0;
+    color: rgb(2, 2, 2);
+}
+
+section#main>article {
+    background-color: rgb(197, 197, 197);
+    color: black;
+    flex: 1 1 300px;
+    border: 2px solid rgb(0, 0, 0);
+    /* Required border */
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+section#main>article h2 {
+    text-align: center;
+}
+
+div#images {
+    display: flex;
+    justify-content: center;
+}
+
+div#images div.flex-center {
+    background-color: rgb(197, 197, 197);
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+div.flex-center > h2 {
+    text-align: center;
+    margin: 5px 0px;
+    color: black;
+}
+
+/* products page */
+article#productCat > h2 {
+    font-size: 22pt;
+    text-align: center;
+    text-shadow: black 0px 0px 3px,
+        green 4px 4px 4px,
+        blue 0px 0px 55px;
+}
+div.productItems {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+div.flex-product {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em;
+}
+
+div.flex-products {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.productBtn input {
+    margin-left: 25%;
+    border: none;
+    margin-top: 15px;
+}
+
+div.flex-product div.flex-products {
+    background-color: rgb(197, 197, 197);
+    border: 3px solid rgb(63, 63, 47);
+    border-radius: 20px;
+    margin: 10px;
+    flex-basis: 620px;
+}
+
+div.flex-products form {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(82, 196, 177);
+    margin: 10px 10px;
+    height: 530px;
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+div.flex-products .description {
+    background-color: rgb(82, 196, 177);
+    border: 1px solid black;
+    border-radius: 20px;
+    /* padding: 10px; */
+    height: 530px;
+    margin: 10px 10px;
+    flex: 1 1 250px;
+}
+div.flex-products h2 {
+    text-align: center;
+    font-size: 18pt; 
+    color: black;  
+}
+.description > p {
+    margin: 0px 10px;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* about us page */
+article#aboutUs {
+    background-color: rgb(197, 197, 197);
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    color: black;
+}
+
+
+/* main page slideshow */
+.mySlides {
+    display: none;
+}
+
+.show-images {
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.mySlideshow-container {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* form styles contact us*/
+form.contact-form {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+}
+article#contentstart > h2 {
+    text-align: center;
+    font-size: 20pt;
+    text-shadow: black 0px 0px 3px,
+        green 4px 4px 4px,
+        blue 0px 0px 55px;
+}
+.form-instructions {
+    color: red;
+    text-align: center;
+}
+
+form.productButton {
+    display: block;
+    width: 200px;
+}
+
+/* social media icons */
+.fa {
+    border: 1px solid yellow;
+    padding: 14px;
+    font-size: 30px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 60px;
+    margin-left: 15px;
+    border-radius: 45px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-tumblr {
+    background: #2c4762;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+/* products page styling for js script */
+.table-option,
+.chair-option,
+.desk-option,
+.bookshelf-option {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.table-button,
+.chair-button,
+.desk-button,
+.bookshelf-button {
+    margin: 0.4em 0.4em;
+    padding: 0.2em 0.4em;
+    border: 3px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(63, 63, 47);
+    text-align: center;
+}
+
+.table-button:hover,
+.chair-button:hover,
+.desk-button:hover,
+.bookshelf-button:hover {
+    background-color: brown;
+    color: white;
+}
+
+/* field styles */
+
+fieldset {
+    margin-bottom: 0.8em;
+}
+
+input,
+textarea {
+    border: 1px solid #ccc;
+    padding: 0.2em;
+    font-size: 1em;
+    display: block;
+}
+
+.contactinfo input,
+.additionalinfo input {
+    width: 20em;
+    margin-bottom: 0.6em;
+}
+
+textarea {
+    width: 20em;
+    height: auto;
+}
+
+#submit {
+    border: none;
+    padding: 0.4em 0.6em;
+    margin: 0 auto;
+    background-color: #e3d5ba;
+    font-size: 1.25em;
+    border-radius: 10px;
+}
+
+/* label styles */
+label {
+    margin: 0.8em 0;
+    font-size: 1em;
+    line-height: 1.6em;
+    font-weight: bold;
+}
+
+/* footer style */
+footer {
+    background-color: #333;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 10em;
+}
+
+/* mobile styles */
+@media only screen and (max-width: 480px) {
+    div.flex-product div.flex-products {
+        flex-basis: 520px;
+    }
+
+    div.flex-products form {
+        flex: 1 1 270px;
+    }
+
+    div.flex-products .description {
+        flex: 1 1 270px;
+    }
+    div.productItems > * {
+        flex-basis: 130px;
+    }
+    div.productItems img {
+        width: 115px;
+        height: 115px;
+    }
+    div.flex-center {
+        width: 320px;
+        height: 390px;
+    }
+    .show-images {
+        width: 300px;
+        height: 300px;
+    }
+    .contactinfo input,
+    .additionalinfo input {
+        width: 18em;
+    }
+    nav.horizontal li{
+        float: none;
+        font-size: 1.2em;
+        line-height: .5em;
+    }
+    textarea {
+        width: 18em;
+    }
+}
+
+/* tablet styles */
+@media only screen and (min-width: 481px) {
+    div.flex-product div.flex-products {
+        flex-basis: 300px;
+    }
+
+    div.flex-products form {
+        flex: 1 1 280px;
+    }
+
+    div.flex-products .description {
+        flex: 1 1 220px;
+    }
+}
+
+/* desktop styles */
+@media only screen and (min-width: 769px) {
+    div.flex-product div.flex-products {
+        flex-basis: 620px;
+    }
+
+    div.flex-products form {
+        flex: 1 1 270px;
+    }
+
+    div.flex-products .description {
+        flex: 1 1 270px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Custom Furniture</h1>
+        <nav class="horizontal">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="products.html" >Products</a></li>
+               <li><a href="aboutus.html">About Us</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+         </nav>
+    </header>
+    <article id="contentstart">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="results.html">
+           <p class="form-instructions">All fields are required</p>
+           <fieldset class="contactinfo">
+              <label for="nameinput">
+                 Name
+                 <input type="text" name="name" id="nameinput" required>
+              </label>
+              <label for="emailinput">
+                 Email
+                 <input type="email" name="email" id="emailinput" required>
+              </label>
+           </fieldset>
+           <fieldset class="additionalinfo">
+              <label for="other-info">
+                 Feedback or questions
+                 <textarea name="other-info" id="other-info" rows="5" cols="50" required></textarea>
+              </label>
+           </fieldset>
+           <fieldset class="submitbutton">
+              <input type="submit" id="submit" value="Submit">
+           </fieldset>
+        </form>
+        
+        </div>
+     </article>
+    <footer>
+        <p>Custom Furniture &#8226; 123 Example Ave, Glendale AZ</p>
+    </footer>
+</body>
+</html>

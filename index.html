@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Custom Furniture</h1>
+        <nav class="horizontal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="main">
+        <div class="main-text">
+            <h2>Welcome to the Custom Furniture Workshop, Real wood Furniture at Great Prices!</h2>
+            <h2>Customize your living space</h2>
+        </div>
+        <article>
+            <h2>Who we are</h2>
+            <div class="flex-image">
+                <img src="images/chainsaw.jpeg" alt="cutting a tree with a chainsaw">
+                <p>We are a small company that builds custome wooden furniture. A place that you can design
+                    a piece of furniture that will fit your home. Giving you full control of how you want your
+                    piece to look. We have many options for you to choose from, such as type of wood, stain color, and
+                    features
+                    you would like to have for your piece. We also have templates that give you a jumping off point.
+                </p>
+            </div>
+            <div class="flex-image">
+                <p>Each piece is handmade with real wood that adds a rustic or modern look to your
+                    living space. Own a home, cabin, cottage or lodge? We can inspire you with a
+                    full range of furniture and finishing touches. Our pieces come in all shapes
+                    , sizes and finishes. Other options include features of that clean and peeled or
+                    full of burls and gnarls. At Custom Furniture the choice is all yours!
+                </p>
+                <img src="images/wood_stack.jpeg" alt="stack of wood with chainsaw cutting area">
+            </div>
+        </article>
+        <article>
+            <h2>How we got started</h2>
+            <p>While working as a Wildland Firefighter during college, I notices a lot of trees being cut down.
+                Healthy trees would be cut down to promote healthy forest growth. I realized that nothing would
+                be done with these trees once cut down. I started picking up small logs and brought them back
+                home to craft something out of them. That's when I started gaining knowledge of woodworking.
+                I started out with small projects such as clocks, stools, and drinking mugs. Soon after I gained
+                more knowledge of crafting havested wood, I moved on to larger furniture projects, such as tables,
+                chairs, and
+                bookshelves.</p>
+            <p>After about a year (2010) of working on my craft, I started going to trade shows to sell the pieces
+                I had completed. These pieces gained in popularity because they were one of a kind items. Thats
+                when it hit me, people dont want to have the same furniture pieces in their home as everyone else.
+            </p>
+            <p>In 2014 we started to grow as a company and opened up a workshop in McCall, Idaho.
+                We started taking custom orders in 2015 with features: wood type, stain color, and many more options.
+                Check out the sit and send us a message with questions or comments.
+            </p>
+        </article>
+    </section>
+    <div id="images">
+        <div class="flex-center">
+            <h2>Bestsellers</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img class="show-images" src="images/diningTable.jpeg" alt="wooden dinning table">
+                </div>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img class="show-images" src="images/bookshelf.jpeg" alt="wooden dinning table">
+                </div>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img class="show-images" src="images/chair.jpeg" alt="wooden dinning table">
+                </div>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img class="show-images" src="images/desk.jpeg" alt="wooden dinning table">
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Custom Furniture &#8226; 123 Example Ave, Glendale AZ</p>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName('mySlides');
+            var dots = document.getElementsByClassName('dot');
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); //Changing image every 3 seconds
+        }
+    </script>
+</body>
+
+</html>

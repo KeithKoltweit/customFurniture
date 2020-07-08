@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Custom Furniture</h1>
+        <nav class="horizontal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="categories">
+        <article id="productCat">
+            <h2>Click on a Category to see more products</h2>
+            <div class=productItems>
+                <div class="table-button">
+                    <h2>Table</h2>
+                    <img src="images/diningTable.jpeg" alt="wooden table" usemap="#imageTable">
+                    <map name="imageTable">
+                        <area href="#mapTables" coords="0,0,200,200" shape="rect">
+                    </map>
+                </div>
+                <div class="chair-button">
+                    <h2>Chairs</h2>
+                    <img src="images/chair.jpeg" alt="wooden chair" usemap="#imageChair">
+                    <map name="imageChair">
+                        <area href="#mapChair" coords="0,0,200,200" shape="rect">
+                    </map>
+                </div>
+                <div class="desk-button">
+                    <h2>Desk</h2>
+                    <img src="images/desk.jpeg" alt="wooden desk" usemap="#imageDesk">
+                    <map name="imageDesk">
+                        <area href="#mapDesk" coords="0,0,200,200" shape="rect">
+                    </map>
+                </div>
+                <div class="bookshelf-button">
+                    <h2>Bookshelf</h2>
+                    <img src="images/bookshelf.jpeg" alt="wooden bookshelf" usemap="#imageBookshelf">
+                    <map name="imageBookshelf">
+                        <area href="#mapBookshelf" coords="0,0,200,200" shape="rect">
+                    </map>
+                </div>
+            </div>
+        </article>
+        <section id="topics">
+            <div class="table-option">
+                <div class="flex-product">
+                    <span id="mapTables"></span>
+                    <div class="flex-products">
+                        <form id="table1" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <h2>Large Dinning Table</h2><hr>
+                            <img src="images/diningTable.jpeg" alt="wooden table">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="6RBRK3ZT7XZVW">
+                            <table>
+                                <tr>
+                                    <td><input type="hidden" name="on0" value="Type of Wood">Type of Wood</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os0">
+                                            <option value="Pine">Pine $250.00 USD</option>
+                                            <option value="Oak">Oak $260.00 USD</option>
+                                            <option value="Birch">Birch $270.00 USD</option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on1" value="Stain Color">Stain Color</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os1">
+                                            <option value="Dark">Dark </option>
+                                            <option value="Medium">Medium </option>
+                                            <option value="Light">Light </option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on2" value="Finish">Finish</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os2">
+                                            <option value="Gloss">Gloss </option>
+                                            <option value="Matte">Matte </option>
+                                            <option value="Flat">Flat </option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on3" value="Leaf">Leaf</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os3">
+                                            <option value="Yes">Yes </option>
+                                            <option value="No">No </option>
+                                        </select> </td>
+                                </tr>
+                            </table>
+                            <div class="productBtn">
+                                <input type="hidden" name="currency_code" value="USD">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                                    name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+                            </div>
+                        </form>
+                        <div class="description">
+                            <h2>Description</h2><hr>
+                            <p>Set the foundation for any entertainment space or dining area with this understated
+                                table.
+                                Featuring a boxy solid and manufactured wood design coated in a washed pine finish, this
+                                table
+                                adds a warm and rustic touch to your look.</p>
+                            <ul>
+                                <li>Dimensions: 79in L x 39in W x 30in H</li>
+                                <li>Weight: 175 Pounds</li>
+                                <li>Fixed Table</li>
+                                <li>Solid wood</li>
+                                <li>Easy to follow directions</li>
+                            </ul>
+                            <div class="icon-block">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html"
+                                    class="fa fa-facebook"></a>
+                                <a href="https://twitter.com/intent/tweet?text=Check%20out%20these%20awesome%20custom%20furniture%20items%20%23oneOfaKind%20http%3A//customfurniture.com"
+                                    class="fa fa-twitter"></a>
+                                <a href="http://www.tumblr.com/share?v=3&u=https%3A%2F%2Fpinterest.com%2Fpin%2Fcreate%2Fbutton%2F%3Furl%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fproducts.html%26media%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fimages%2FdiningTable.jpeg%26description%3DAdd%2520your%2520own%2520custom%2520features&t="
+                                    class="fa fa-tumblr"></a>
+                                <a href="https://pinterest.com/pin/create/button/?url=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html&media=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/images/diningTable.jpeg&description=Add%20your%20own%20custom%20features"
+                                    class="fa fa-pinterest"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="flex-products">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <h2>Double Side Table</h2><hr>
+                            <img src="images/sideTable.jpeg" alt="side table display">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="ERUWWEKF3JWPC">
+                            <table>
+                                <tr>
+                                    <td><input type="hidden" name="on0" value="Type of Wood">Type of Wood</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os0">
+                                            <option value="Pine">Pine $75.00 USD</option>
+                                            <option value="Oak">Oak $85.00 USD</option>
+                                            <option value="Birch">Birch $95.00 USD</option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on1" value="Stain Color">Stain Color</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os1">
+                                            <option value="Dark">Dark </option>
+                                            <option value="Medium">Medium </option>
+                                            <option value="Light">Light </option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on2" value="Finish">Finish</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os2">
+                                            <option value="Gloss">Gloss </option>
+                                            <option value="Matte">Matte </option>
+                                            <option value="Flat">Flat </option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on3" value="Drawer">Drawer</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os3">
+                                            <option value="Yes">Yes </option>
+                                            <option value="No">No </option>
+                                        </select> </td>
+                                </tr>
+                            </table>
+                            <div class="productBtn">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                                border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                                height="1">
+                            </div>
+                        </form>
+                        <div class="description">
+                            <h2>Description</h2><hr>
+                            <p>The perfect pair for a classic armchair, this elegant end table is a must-have finishing
+                                touch for the living room. Let it stage a glossy ceramic lamp to cast a warm and
+                                relaxing glow,
+                                equally ideal for kicking back with your morning coffee or lending a little extra
+                                ambiance to
+                                your next cocktail party.</p>
+                            <ul>
+                                <li>Dimensions: 23.5in L x 24in D x 24in H</li>
+                                <li>Weight: 50 Pounds</li>
+                                <li>Lower shelf for more storage </li>
+                                <li>Easy to follow directions</li>
+                            </ul>
+                            <div class="icon-block">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html"
+                                    class="fa fa-facebook"></a>
+                                <a href="https://twitter.com/intent/tweet?text=Check%20out%20these%20awesome%20custom%20furniture%20items%20%23oneOfaKind%20http%3A//customfurniture.com"
+                                    class="fa fa-twitter"></a>
+                                <a href="http://www.tumblr.com/share?v=3&u=https%3A%2F%2Fpinterest.com%2Fpin%2Fcreate%2Fbutton%2F%3Furl%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fproducts.html%26media%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fimages%2FdiningTable.jpeg%26description%3DAdd%2520your%2520own%2520custom%2520features&t="
+                                    class="fa fa-tumblr"></a>
+                                <a href="https://pinterest.com/pin/create/button/?url=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html&media=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/images/diningTable.jpeg&description=Add%20your%20own%20custom%20features"
+                                    class="fa fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-products">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <h2>Cozy Coffee Table</h2><hr>
+                            <img src="images/coffeeTable.jpg" alt="coffee table display">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="XAT4ZVPVN7BX2">
+                            <table>
+                                <tr>
+                                    <td><input type="hidden" name="on0" value="Type of Wood">Type of Wood</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os0">
+                                            <option value="Pine">Pine $75.00 USD</option>
+                                            <option value="Oak">Oak $85.00 USD</option>
+                                            <option value="Birch">Birch $95.00 USD</option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on1" value="Stain Color">Stain Color</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os1">
+                                            <option value="Dark">Dark </option>
+                                            <option value="Medium">Medium </option>
+                                            <option value="Light">Light </option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on2" value="Finish">Finish</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os2">
+                                            <option value="Gloss">Gloss </option>
+                                            <option value="Matte">Matte </option>
+                                            <option value="Flat">Flat </option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on3" value="Drawer">Drawer</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os3">
+                                            <option value="Yes">Yes </option>
+                                            <option value="No">No </option>
+                                        </select> </td>
+                                </tr>
+                            </table>
+                            <div class="productBtn">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                                border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                                height="1">
+                            </div>
+                        </form>
+                        <div class="description">
+                            <h2>Description</h2><hr>
+                            <p>Round out your living room layout in rustic style with this clean-lined coffee table.
+                                Crafted from solid and manufactured wood.
+                                The top provides a place to spread out snacks and the remote as you kick back and relax,
+                                while the open lower shelf lets you
+                                keep blankets, board games, magazines, and more within reach. Assembly is required.</p>
+                            <ul>
+                                <li>Dimensions: 60in L x 24in W x 18in H</li>
+                                <li>Weight: 75 Pounds</li>
+                                <li>Optional drawers</li>
+                                <li>Easy to follow directions</li>
+                            </ul>
+                            <div class="icon-block">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html"
+                                    class="fa fa-facebook"></a>
+                                <a href="https://twitter.com/intent/tweet?text=Check%20out%20these%20awesome%20custom%20furniture%20items%20%23oneOfaKind%20http%3A//customfurniture.com"
+                                    class="fa fa-twitter"></a>
+                                <a href="http://www.tumblr.com/share?v=3&u=https%3A%2F%2Fpinterest.com%2Fpin%2Fcreate%2Fbutton%2F%3Furl%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fproducts.html%26media%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fimages%2FdiningTable.jpeg%26description%3DAdd%2520your%2520own%2520custom%2520features&t="
+                                    class="fa fa-tumblr"></a>
+                                <a href="https://pinterest.com/pin/create/button/?url=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html&media=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/images/diningTable.jpeg&description=Add%20your%20own%20custom%20features"
+                                    class="fa fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chair-option">
+                <div class="flex-product">
+
+                    <div class="flex-products">
+                        <span id="mapChair"></span>
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <h2>Dinning Chair</h2><hr>
+                            <img src="images/chair.jpeg" alt="wooden dinning chair">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="2M9PPQ7FSMJYS">
+                            <table>
+                                <tr>
+                                    <td><input type="hidden" name="on0" value="Type of Wood">Type of Wood</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os0">
+                                            <option value="Pine">Pine $75.00 USD</option>
+                                            <option value="Oak">Oak $85.00 USD</option>
+                                            <option value="Birch">Birch $95.00 USD</option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on1" value="Stain Color">Stain Color</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os1">
+                                            <option value="Dark">Dark </option>
+                                            <option value="Medium">Medium </option>
+                                            <option value="Light">Light </option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on2" value="Finish">Finish</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os2">
+                                            <option value="Gloss">Gloss </option>
+                                            <option value="Matte">Matte </option>
+                                            <option value="Flat">Flat </option>
+                                        </select> </td>
+                                </tr>
+                            </table>
+                            <div class="productBtn">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                                border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                                height="1">
+                            </div>
+                        </form>
+                        <div class="description">
+                            <h2>Description</h2><hr>
+                            <p>Build a classic ensemble in any room of your home with these chairs. Versatile and
+                                simple,
+                                this piece brings extra seating to your space without disrupting your aesthetic.
+                                Each chair showcases an understated silhouette, a slatted backrest, and subtly flared
+                                legs.</p>
+                            <ul>
+                                <li>Dimensions: 38in H x 18in W x 18in D</li>
+                                <li>Weight: 18 Pounds</li>
+                                <li>Solid wood</li>
+                                <li>Weight Capacity: 300 pounds</li>
+                                <li>Slat back</li>
+                            </ul>
+                            <div class="icon-block">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html"
+                                    class="fa fa-facebook"></a>
+                                <a href="https://twitter.com/intent/tweet?text=Check%20out%20these%20awesome%20custom%20furniture%20items%20%23oneOfaKind%20http%3A//customfurniture.com"
+                                    class="fa fa-twitter"></a>
+                                <a href="http://www.tumblr.com/share?v=3&u=https%3A%2F%2Fpinterest.com%2Fpin%2Fcreate%2Fbutton%2F%3Furl%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fproducts.html%26media%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fimages%2FdiningTable.jpeg%26description%3DAdd%2520your%2520own%2520custom%2520features&t="
+                                    class="fa fa-tumblr"></a>
+                                <a href="https://pinterest.com/pin/create/button/?url=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html&media=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/images/diningTable.jpeg&description=Add%20your%20own%20custom%20features"
+                                    class="fa fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desk-option">
+                <div class="flex-product">
+                    <span id="mapDesk"></span>
+                    <div class="flex-products">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <h2>Student Study Desk</h2><hr>
+                            <img src="images/desk.jpeg" alt="wooden desk">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="KTA2HSVM3DTJJ">
+                            <table>
+                                <tr>
+                                    <td><input type="hidden" name="on0" value="Type of Wood">Type of Wood</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os0">
+                                            <option value="Pine">Pine $125.00 USD</option>
+                                            <option value="Oak">Oak $135.00 USD</option>
+                                            <option value="Birch">Birch $145.00 USD</option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on1" value="Stain Color">Stain Color</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os1">
+                                            <option value="Dark">Dark </option>
+                                            <option value="Medium">Medium </option>
+                                            <option value="Light">Light </option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on2" value="Finish">Finish</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os2">
+                                            <option value="Gloss">Gloss </option>
+                                            <option value="Matte">Matte </option>
+                                            <option value="Flat">Flat </option>
+                                        </select> </td>
+                                </tr>
+                            </table>
+                            <div class="productBtn">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                                border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                                height="1">
+                            </div>
+                        </form>
+                        <div class="description">
+                            <h2>Description</h2><hr>
+                            <p>The perfect size for the home work space, this handsome desk can flexibly accommodate
+                                your ever-changing
+                                electronics setup with a cleverly designed wire management system on the desktop making
+                                it easy for you to
+                                keep those challenging cords under control while maximizing precious desk space.</p>
+                            <ul>
+                                <li>Dimensions: 54in W x 20in D x 31in H</li>
+                                <li>Weight: 100 Pounds</li>
+                                <li>Solid wood</li>
+                                <li>Adjustable shelf</li>
+                                <li>Optional keyboard drawer</li>
+                            </ul>
+                            <div class="icon-block">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html"
+                                    class="fa fa-facebook"></a>
+                                <a href="https://twitter.com/intent/tweet?text=Check%20out%20these%20awesome%20custom%20furniture%20items%20%23oneOfaKind%20http%3A//customfurniture.com"
+                                    class="fa fa-twitter"></a>
+                                <a href="http://www.tumblr.com/share?v=3&u=https%3A%2F%2Fpinterest.com%2Fpin%2Fcreate%2Fbutton%2F%3Furl%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fproducts.html%26media%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fimages%2FdiningTable.jpeg%26description%3DAdd%2520your%2520own%2520custom%2520features&t="
+                                    class="fa fa-tumblr"></a>
+                                <a href="https://pinterest.com/pin/create/button/?url=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html&media=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/images/diningTable.jpeg&description=Add%20your%20own%20custom%20features"
+                                    class="fa fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bookshelf-option">
+                <div class="flex-product">
+                    <span id="mapBookshelf"></span>
+                    <div class="flex-products">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <h2>Bookshelf</h2><hr>
+                            <img src="images/bookshelf.jpeg" alt="wooden bookshelf">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="5V8SZKA9EA2LJ">
+                            <table>
+                                <tr>
+                                    <td><input type="hidden" name="on0" value="Type of Wood">Type of Wood</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os0">
+                                            <option value="Pine">Pine $150.00 USD</option>
+                                            <option value="Oak">Oak $160.00 USD</option>
+                                            <option value="Birch">Birch $170.00 USD</option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on1" value="Stain Color">Stain Color</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os1">
+                                            <option value="Dark">Dark </option>
+                                            <option value="Medium">Medium </option>
+                                            <option value="Light">Light </option>
+                                        </select> </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="hidden" name="on2" value="Finish">Finish</td>
+                                </tr>
+                                <tr>
+                                    <td><select name="os2">
+                                            <option value="Gloss">Gloss </option>
+                                            <option value="Matte">Matte </option>
+                                            <option value="Flat">Flat </option>
+                                        </select> </td>
+                                </tr>
+                            </table>
+                            <div class="productBtn">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                                border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                                height="1">
+                            </div>
+                        </form>
+                        <div class="description">
+                            <h2>Description</h2><hr>
+                            <p>Spruce up your living area: Don't sacrifice style when adding storage to your home;
+                                this modern bookcase in rustic brown finish offers the right mix of style and
+                                efficiency to keep your book collection</p>
+                            <ul>
+                                <li>Dimensions: 72in x 13in x 50in</li>
+                                <li>Weight: 75 Pounds</li>
+                                <li>4 adjustable shelves</li>
+                                <li>Easy to follow directions</li>
+                                <li>Comes with an anti-tipping device to stabilize and anchor the shelf for safety</li>
+                            </ul>
+                            <div class="icon-block">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html"
+                                    class="fa fa-facebook"></a>
+                                <a href="https://twitter.com/intent/tweet?text=Check%20out%20these%20awesome%20custom%20furniture%20items%20%23oneOfaKind%20http%3A//customfurniture.com"
+                                    class="fa fa-twitter"></a>
+                                <a href="http://www.tumblr.com/share?v=3&u=https%3A%2F%2Fpinterest.com%2Fpin%2Fcreate%2Fbutton%2F%3Furl%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fproducts.html%26media%3Dhttps%253A%2F%2Fweb123-course-39cab.firebaseapp.com%2Fcis-235%2Ffinal-project%2Fimages%2FdiningTable.jpeg%26description%3DAdd%2520your%2520own%2520custom%2520features&t="
+                                    class="fa fa-tumblr"></a>
+                                <a href="https://pinterest.com/pin/create/button/?url=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/products.html&media=https%3A//web123-course-39cab.firebaseapp.com/cis-235/final-project/images/diningTable.jpeg&description=Add%20your%20own%20custom%20features"
+                                    class="fa fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </article>
+        </section>
+    </section>
+    <footer>
+        <p>Custom Furniture &#8226; 123 Example Ave, Glendale AZ</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
